@@ -25,7 +25,7 @@ def password_gen(min_length=8, numbers=True, special_characters=True):
             return pwd
         
 #More control on the passwords includes option for opting lower and uppercase
-def password_gen_control(min_length=8,lower=True, upper=True, numbers=True, special_characters=True):
+def password_gen_control(min_length=8, lower=True, upper=True, numbers=True, special_characters=True):
 
     # Get all available  letters, digits. and special characters
     lower_letters = string.ascii_lowercase

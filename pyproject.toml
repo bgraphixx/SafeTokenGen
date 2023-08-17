@@ -4,7 +4,7 @@ version = "0.0.1"
 authors = [
   { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" },
 ]
-description = "A simple package for generating OTPs, PINs, Passwords, Tokens and QR Codes"
+description = "A simple package for generating OTPs, PINs, Passwords, and Token Lists. Easily customizable to fit various criteria"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
