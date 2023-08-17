@@ -1,0 +1,18 @@
+[project]
+name = "safe_token_gen"
+version = "0.0.1"
+authors = [
+  { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" },
+]
+description = "A simple package for generating OTPs, PINs, Passwords, Tokens and QR Codes"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bgraphixx/SafeTokenGen"
+"Bug Tracker" = "https://github.com/bgraphixx/SafeTokenGen/issues"
