@@ -14,7 +14,7 @@ def password_gen(min_length=8, numbers=True, special_characters=True):
     if special_characters:
         characters += special
 
-    #Initialize empty password and criteria
+    #Initialize empty password
     pwd = ""
 
     #Append random characters from the pool together to form password
@@ -24,7 +24,6 @@ def password_gen(min_length=8, numbers=True, special_characters=True):
            (not special_characters or any(char in string.punctuation for char in pwd)):
             return pwd
         
-
 #More control on the passwords includes option for opting lower and uppercase
 def password_gen_control(min_length=8,lower=True, upper=True, numbers=True, special_characters=True):
 
