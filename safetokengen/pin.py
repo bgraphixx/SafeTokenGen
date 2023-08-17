@@ -2,7 +2,7 @@ import string, random
 
 def pin_gen(min_length=4):
 
-    #Create OTP pool based on criteria
+    #Create PIN pool
     digits = string.digits
 
     #Initialize empty PIN
