@@ -5,7 +5,7 @@ Effortlessly generate secure tokens for your projects with the **SafeTokenGen** 
 ## Features:
 - Generate Passwords, OTPs, PINs, API keys and Token lists with various options for customization.
 - No need to build token generation algorithms from scratch.
-- Tokens are never hashed or stored, ensuring top-notch security.
+- Tokens are never hashed or stored, ensuring top-notch security. It generates only leaving you to store/hash as you please.
 - Streamline your development process and save time.
 - Get started today and supercharge your token generation workflow.
 
