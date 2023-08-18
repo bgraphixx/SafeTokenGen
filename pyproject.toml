@@ -12,9 +12,10 @@ maintainers = [
   { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" }
 ]
 
-description = "Generate Passwords, OTPs, PINs, API keys and Token lists/dictionaries with various options for customization."
+description = "Generate Passwords, OTPs, PINs, API keys and Token lists with various options for customization."
 keywords = ["passwords","pins", "otp","api keys"]
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
