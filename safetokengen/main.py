@@ -46,7 +46,7 @@ def generate_password(min_length=8, numbers=True, special_characters=True):
         >> generate_password(12, numbers=True, special_characters=True)
         >> aB3!zP8qR@5
     """
-    return password.password_gen(min_length=8, numbers=True, special_characters=True)
+    return password.password_gen(min_length, numbers, special_characters)
     
 def generate_password_control(min_length=12, lower=True, upper=True, numbers=True, special_characters=True):
     """
