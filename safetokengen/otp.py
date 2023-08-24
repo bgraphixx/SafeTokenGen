@@ -16,7 +16,14 @@ def otp_gen(min_length=6, alpha_numeric=False):
 
     #Append random characters from the pool together to form OTP
     while True:
+        if min_length < 2:
+            raise ValueError("Minimum length must be at least 2")
+        
         otp = ''.join(random.choice(characters) for _ in range(min_length))
-        if (not letters or any(string.ascii_letters for char in otp)):
-            return otp
+
+        #Checks if criteria is met in generated OTP
+        if alpha_numeric:
+            if not any(char.isalpha() for char in otp) or not any(char.isdigit() for char in otp):
+                continue  
+        return otp
         
