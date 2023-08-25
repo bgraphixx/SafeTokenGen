@@ -42,7 +42,7 @@ from safetokengen import generate_api_key_control
 
 # Generate a controlled API key with a length of 16 characters,
 # alphanumeric characters, a prefix, and custom dividers
-divider_indices = [, 9, 13]
+divider_indices = [4, 9, 13]
 custom_divider = "-"
 prefix_value = "test"
 api_key = generate_api_key_control(16, "alphanumeric", prefix_value, True, divider_indices, custom_divider)
