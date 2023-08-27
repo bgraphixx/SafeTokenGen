@@ -1,4 +1,5 @@
 from safetokengen import api_key, otp, password, pin, token
+import string
 
 def test_simple_api_key():
     api_keys = api_key.api_key_gen(16, "hex")
@@ -34,4 +35,4 @@ def test_generate_controlled_password():
     assert any(char.islower() for char in passwords)
     assert any(char.isupper() for char in passwords)
     assert any(char.isdigit() for char in passwords)
-    assert any(char in "!@#$%^&*()_+-=[]{}|;:,.<>?/" for char in passwords)
+    assert any(char in string.punctuation for char in passwords)
