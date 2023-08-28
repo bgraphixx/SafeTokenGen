@@ -1,4 +1,4 @@
-from safetokengen import api_key, password, token, otp, pin
+from safetokengen.utils import api_key, password, token, otp, pin
 
 def generate_api_key(length=32, char_type="hex"):
     """
