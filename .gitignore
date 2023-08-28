@@ -2,4 +2,5 @@ build
 dist
 safetokengen.egg-info
 tar.gz
+.pypirc
 __pycache__

@@ -4,12 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "safetokengen"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" },
 ]
 maintainers = [
-  { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" }
+  { name="Ebubechukwu Ibeh", email="bgraphixx5@gmail.com" },
+  { name="Urias Triumph Baribefi", email="triumphurias@outlook.com" }
 ]
 
 description = "Generate Passwords, OTPs, PINs, API keys and Token lists with various options for customization."
