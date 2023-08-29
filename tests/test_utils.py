@@ -21,7 +21,7 @@ def test_generate_otp():
     assert any(char.isalpha() for char in otps) or any(char.isdigit() for char in otps)
 
 def test_generate_token_list():
-    tokens = token.token_gen(length=8, number_of_tokens=5)
+    tokens = token.token_gen(length=8, number_of_tokens=5, alpha_numeric=False)
     assert len(tokens) == 5
     assert all(len(t) == 8 for t in tokens)
     assert len(tokens) == len(set(tokens))  # Ensure uniqueness

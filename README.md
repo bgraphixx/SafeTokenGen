@@ -85,8 +85,8 @@ Generate a list of unique tokens using the `generate_token_list` function:
 ```python
 from safetokengen import generate_token_list
 
-# Generate a list of 10 unique tokens, each with a length of 6 characters
-token_list = generate_token_list(6, 10)
+# Generate a list of 10 unique alphanumeric tokens, each with a length of 6 characters
+token_list = generate_token_list(6, 10, True)
 print(token_list)  # Example output: ['1a2b3c', 'x4y5z6', 'pQrStU', ...]
 ```
 

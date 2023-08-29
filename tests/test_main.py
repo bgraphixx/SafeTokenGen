@@ -19,9 +19,16 @@ def test_generate_password():
 
 
 def test_generate_token_list():
-    token_list = generate_token_list(6, 10)
-    assert len(token_list) == 10
-    assert all(len(token) == 6 for token in token_list)
+    token_list_nonalphanumeric = generate_token_list(6, 10, False)
+    assert len(token_list_nonalphanumeric) == 10
+    assert all(len(token) == 6 for token in token_list_nonalphanumeric)
+    assert all(token.isdigit for token in token_list_nonalphanumeric)
+    assert len(token_list_nonalphanumeric) == len(set(token_list_nonalphanumeric))  # Ensure uniqueness
+
+    token_list_alphanumeric = generate_token_list(6, 10, True)
+    assert len(token_list_alphanumeric) == 10
+    assert all(len(token) == 6 for token in token_list_alphanumeric)
+    assert all(any(char.isalpha() for char in token) and any(char.isdigit() for char in token) for token in token_list_alphanumeric)
 
 
 def test_generate_otp():

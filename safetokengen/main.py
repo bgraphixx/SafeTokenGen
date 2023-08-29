@@ -72,25 +72,26 @@ def generate_password_control(min_length=12, lower=True, upper=True, numbers=Tru
     """
     return password.password_gen_control(min_length, lower, upper, numbers, special_characters)
 
-def generate_token_list(length=6, number_of_tokens=10):
+def generate_token_list(length=6, number_of_tokens=10, alpha_numeric=False):
     """
     Generate a list of unique random tokens.
 
     Args:
         length (int, optional): Length of each token. Default is 6.
         number_of_tokens (int, optional): Number of tokens to generate. Default is 10.
+        alpha_numeric (bool, optional): Include alphabetical characters in the token. Default is False.
 
     Returns:
         list: List of generated tokens.
 
     Example:
-        >>> generate_token_list(8, number_of_tokens=5)
+        >>> generate_token_list(8, number_of_tokens=5, alpha_numeric = True)
         ['1aB3zP8q', '5rY2tD9u', '7wE1kM6x', '2pF8gS4c', '9mN7vB5j']
 
     Note:
         The generated tokens are guaranteed to be unique.
     """
-    return token.token_gen(length, number_of_tokens)
+    return token.token_gen(length, number_of_tokens, alpha_numeric)
 
 def generate_otp(min_length=6, alpha_numeric=False):
     """
@@ -128,3 +129,4 @@ def generate_pin(min_length=4):
         '7248'
     """
     return pin.pin_gen(min_length)
+
